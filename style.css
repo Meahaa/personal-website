@@ -124,6 +124,42 @@ a {
   text-decoration: none;
 }
 
+body {
+    background-color: #fdfdfd;
+}
+
+
+/*
+ * Font Styling
+ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
 
 /* 
  * Base color Styling
@@ -131,11 +167,13 @@ a {
 
 .grey { 
     background-color: #e6e6e6;
-    height: 280px;
+    height: 250px;
 }
 
 
 .pink-t { color: #f2808a;}
+
+.grey-t { color: #999999;}
 .blue-t { color: #82d9d7;}
 .black-t { color: #333333;}
 
@@ -152,14 +190,16 @@ a {
 .margin-t-10 { margin-top: 28px; }
 .margin-t-15 { margin-top: 32px; }
 .margin-t-20 { margin-top: 56px; }
-.margin-t-25 { margin-top: 70px; }
+.margin-t-text { margin: 50px 0;}
+
 
 /*
  * Overwrite bootstrap
  */
 
 .container {
-    margin-top: 10px;
+    margin: 0 auto 40px auto;
+    max-width: 1000px;
 }
 
 
@@ -174,10 +214,40 @@ a {
     max-height: 130px;
 }
 
-.img-80 { 
+.img-80,
+.img-face { 
     max-width: 80%; 
-    max-height: 200px;
+    max-height: 180px;
 }
+
+
+/*
+ * general classes
+ */
+
+ .hover:hover {
+    cursor: pointer;
+    background: #d9d9d9;
+ }
+
+ .clear {
+    clear: both;
+ }
+
+
+ /*
+  * footer
+  */
+
+.footer {
+    width: calc(100% - 30px);
+    clear: both;
+    border-top: 2px solid #e6e6e6;
+    margin: 30px auto 20px auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
 
 /* 
  * Device media queries - with Bootstrap 3
@@ -186,26 +256,65 @@ a {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+    .grey { 
+        height: auto;
+        min-height: 245px;
+    }
+
+    
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .img-name { max-width: 35%; }
+
+    .margin-t-text { margin: 30px 0; }
+
+    p {
+        text-align: center;
+    }
+
+    .img-name { max-width: 30%; }
+
+    .grey { 
+        height: auto;
+        overflow: auto;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
    .img-name { max-width: 40%; }
+
+   .img-80,
+   .img-60 { display:none; }
+
+   .grey { min-height:0; }
+
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+    p { 
+        font-size: 14px; 
+        line-height: 26px;
+    }
+
+    h2 { 
+        font-size: 14px;
+    }
+
     
+    .img-face { max-width: 45%; }
+
+
+
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-    
+
 }
 
 
