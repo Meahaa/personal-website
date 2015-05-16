@@ -1,8 +1,6 @@
-/* ------------------------------------------------------------ *\
-|* ------------------------------------------------------------ *|
-|* CSS Reset
-|* ------------------------------------------------------------ *|
-\* ------------------------------------------------------------ */
+/* 
+ * CSS Reset
+ */
 html,
 body,
 div,
@@ -120,3 +118,60 @@ a img {
 a {
   text-decoration: none;
 }
+
+/* 
+ * Base color Styling
+ */
+
+.grey { 
+    background-color: #e6e6e6;
+    height: 280px;
+}
+
+
+.pink-t { color: #f2808a;}
+.blue-t { color: #82d9d7;}
+.black-t { color: #333333;}
+
+/* 
+ * Spacing
+ */
+
+.col-padding { 
+    padding: 10px; 
+    margin-top: 30px;
+}
+
+.margin-t-5 { margin-top: 14px; }
+.margin-t-10 { margin-top: 28px; }
+.margin-t-15 { margin-top: 32px; }
+.margin-t-20 { margin-top: 56px; }
+.margin-t-25 { margin-top: 70px; }
+
+/*
+ * Overwrite bootstrap
+ */
+
+.container {
+    margin-top: 10px;
+}
+
+
+/*
+ * Image styling
+ */
+
+.img-20 { max-width: 20%; }
+
+.img-60 {
+    max-width: 60%;
+    max-height: 130px;
+}
+
+.img-80 { 
+    max-width: 80%; 
+    max-height: 200px;
+}
+
+
+
