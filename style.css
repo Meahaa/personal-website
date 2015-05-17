@@ -180,7 +180,7 @@ p {
 
 .grey-b { 
     background-color: #e6e6e6;
-    overflow: auto;
+    overflow: hidden;
     padding: 20px 0;
 }
 
