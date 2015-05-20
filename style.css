@@ -373,6 +373,17 @@ p {
 }
 
 
+/*
+ * Image only
+ */
+
+ .img-portfolio {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+ }
+
+
  /*
   * footer
   */
