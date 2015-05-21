@@ -293,6 +293,12 @@ p {
     background-size: cover;
 }
 
+.shadow {
+  -moz-box-shadow:    0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow:         0 0 10px #ccc;
+}
+
 /* 
  * Project pages styling
  */
@@ -446,6 +452,11 @@ p {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+    p {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
    .img-name { max-width: 40%; }
 
